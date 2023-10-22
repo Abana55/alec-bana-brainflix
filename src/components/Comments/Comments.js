@@ -8,11 +8,13 @@ function Comments({videoInfo}) {
             <section className='comment__form'>
                 <img className='comment__user' alt='user profile' src={avatar} />
                 <form>
-                    <input className='comment__input'></input>
+                    <label>JOIN THE CONVERSATION</label>
+                    <input className='comment__input' placeholder="Add a new Comment"></input>
+                    <button className='comment__button'>COMMENT</button>
                 </form>
             </section>
             <section>
-                {videoInfo.map ((comments => 
+                {videoInfo.comments.map ((comments => 
                     <div>
                         <div>{comments.name}</div>
                         <div>{comments.timestamp}</div>
