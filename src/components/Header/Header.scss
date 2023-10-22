@@ -9,11 +9,12 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin: 0 1rem;
+        margin: 0 3rem;
     }
     &__logo {
         height: 4vh;
         padding-bottom: .5rem;
+        padding-top: 1rem;
     }
     &__block {
         display: flex;
@@ -23,6 +24,7 @@
         @include tablet {
             flex-direction: row;
             align-items: center;
+
         }
     }
     &__box {
@@ -31,8 +33,13 @@
     }
     &__icon {
         position: absolute;
-        bottom: 50px;
+        bottom: 119px;
         left: 40px;
+        @include tablet {
+            bottom: 50px;
+            left: 40px;
+        }
+        
     }
     &__form {
         display: flex;
@@ -45,6 +52,9 @@
         border:1px solid $mercury;
         border-radius: .25rem;
         background-color: $alabaster;
+        @include tablet {
+            width: 25vw;
+        }
     }
     &__user {
         background-color: $mercury;
@@ -53,6 +63,10 @@
         margin: 1rem;
         border-radius: 50%;
         margin-top: 1rem;
+        @include tablet {
+            position: absolute;
+            right: -60px;
+        }
     }
     &__button {
         background-color: $brainflix-blue;
@@ -63,6 +77,10 @@
         font-size: 1rem;
         font-weight: 600;
         margin-top: 1rem;
+        @include tablet {
+            margin-top: 0;
+            width: 25vw;
+        }
     }
 
 }
