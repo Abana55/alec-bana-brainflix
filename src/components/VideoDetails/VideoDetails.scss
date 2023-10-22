@@ -1,0 +1,40 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.info {
+    &__title {
+        font-size: 1.8rem;
+        padding: 1rem;
+        color: $brainflix-black;
+        border-bottom: 1px solid $mercury;
+    }
+    &__section {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        align-items: center;
+        border-bottom: 1px solid $mercury;
+    }
+    &__user {
+        font-weight: 700;
+        color: $brainflix-black;
+        padding-bottom: 1rem;
+    }
+    &__data {
+        display: flex;
+    }
+    &__icon-1{
+        margin-bottom: 1rem;
+        margin-right: .5rem;
+    }
+    &__icon-2{
+        margin-right: .5rem;
+    }
+    &__number {
+        color: $silver;
+    }
+    &__description {
+        padding: 1rem;
+        
+    }
+}

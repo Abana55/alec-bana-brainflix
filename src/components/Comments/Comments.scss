@@ -1,0 +1,73 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.comment {
+    &__form {
+        display: flex;
+        padding: 1rem;
+        border-bottom: 1px solid $mercury;
+    }
+    &__user {
+        height: 3rem;
+        width: 3rem;
+        margin: 1rem;
+        border-radius: 50%;
+        margin-top: 1rem;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+    }
+    &__input {
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+        border: 1px solid $mercury ;
+        background-color: $alabaster;
+        border-radius: 0.25rem;
+        &:focus {
+            border: 2px solid $brainflix-blue;
+        } 
+    }
+    &__button {
+        @include button;
+    }
+    &__section{
+        border-bottom: 1px solid $mercury;
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    &__avatar {
+        background-color: $mercury;
+        border-radius: 50%;
+        width: 2.25rem;
+        height: 2.25rem;
+        padding-right: 2rem;
+        margin-right: 1rem;
+    }
+    &__fill {
+        display: flex;
+        flex-direction: column;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+    &__name {
+        font-size: .9rem;
+    }
+    &__date {
+        color: $silver;
+    }
+    &__para {
+        line-height: 1.125rem;
+        font-size: .8125rem;
+    }
+
+}

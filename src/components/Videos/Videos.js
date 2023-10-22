@@ -6,10 +6,12 @@ function Videos({compVids}) {
         <>
         <h2 className='videos'>NEXT VIDEOS</h2>
         {compVids.map((tehe) =>
-        <section>
-            <img src={tehe.image} alt='linked video thumbnails'/>
-            <p>{tehe.title}</p>
-            <p>{tehe.channel}</p>
+        <section className='videos__box'>
+            <img className='videos__img' src={tehe.image} alt='linked video thumbnails'/>
+            <section className='videos__container'>
+                <p className='videos__title'>{tehe.title}</p>
+                <p className='videos__user'>{tehe.channel}</p>
+            </section>
         </section>
 
         )}

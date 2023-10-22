@@ -1,0 +1,27 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.videos {
+    color: $silver;
+    font-size: .9rem;
+    padding: 1rem;
+    &__box {
+        display: flex;
+        margin: 1rem;
+    }
+    &__img {
+        border-radius: .25rem;
+        width: 7.3rem;
+        height: 5rem;
+        object-fit: cover;
+    }
+    &__container {
+        padding-left: 1rem;
+        width: 55%;
+    }
+    &__title {
+        font-weight: 700;
+        color: $brainflix-black;
+        text-overflow: ellipsis;
+    }
+}

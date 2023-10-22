@@ -5,6 +5,9 @@
 .navi {
     flex-direction: column;
     display: flex;
+    @include tablet {
+        flex-direction: row;
+    }
     &__logo {
         height: 4vh;
         padding-bottom: .5rem;

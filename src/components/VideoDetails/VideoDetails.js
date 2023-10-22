@@ -8,16 +8,24 @@ function VideoDetails({videoInfo}){
             <section>
                 <h1 className='info__title'>{videoInfo.title}</h1>
             </section>
-            <section>
-                <p>{videoInfo.channel}</p>
-                <p>{videoInfo.timestamp}</p>
-                <img src={Views} alt="icon"/>
-                <p>{videoInfo.views}</p>
-                <img src={Likes} alt="icon"/>
-                <p>{videoInfo.likes}</p>
+            <section className='info__section'>
+                <section className='info__box'>
+                    <p className='info__user'>By {videoInfo.channel}</p>
+                    <p className='info__number'>{new Date(videoInfo.timestamp).toLocaleDateString()}</p>
+                </section>
+                <section className='info__box-2'>
+                    <div className='info__data'>
+                        <img className='info__icon-1' src={Views} alt="icon"/>
+                        <p className='info__number'>{videoInfo.views}</p>
+                    </div>
+                    <div className='info__data'>
+                        <img className='info__icon-2' src={Likes} alt="icon"/>
+                        <p className='info__number'>{videoInfo.likes}</p>
+                    </div>
+                </section>
             </section>
             <section>
-                <p className='description'>{videoInfo.description}</p>
+                <p className='info__description'>{videoInfo.description}</p>
             </section>
         </section>
 
