@@ -4,7 +4,7 @@ function Videos({compVids}) {
 
     return (
         <>
-        <h2>NEXT VIDEOS</h2>
+        <h2 className='videos'>NEXT VIDEOS</h2>
         {compVids.map((tehe) =>
         <section>
             <img src={tehe.image} alt='linked video thumbnails'/>
