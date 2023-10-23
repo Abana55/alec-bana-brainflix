@@ -2,12 +2,18 @@
 @use '../../styles/partials/mixins' as *;
 
 .comment {
+    @include desktop {
+        width: 50%;
+    }
     &__form {
         display: flex;
         padding: 1rem;
         border-bottom: 1px solid $mercury;
         @include tablet {
             margin: 0 3rem;
+        }
+        @include desktop {
+            width: 57vw;
         }
     }
     &__user {
@@ -23,6 +29,9 @@
         width: 70vw;
         @include tablet {
             flex-direction: row;
+        }
+        @include desktop {
+            width: 40vw;
         }
     }
     &__conversation {
@@ -47,6 +56,11 @@
             padding-bottom: 0.5rem;
             width: 50vw;
         }
+        @include desktop {
+            width: 30vw;
+            margin-right: 1rem;
+
+        }
     }
     &__button {
         @include button;
@@ -58,6 +72,12 @@
     &__loop {
         @include tablet {
             margin: 0 2rem;
+        }
+        @include desktop {
+            width: 100vw;
+            width: 65vw;
+            margin: 0;
+
         }
     }
     &__section{
@@ -79,6 +99,9 @@
         @include tablet {
             width: 1.5rem;
         }
+        @include desktop {
+            width: 1rem;
+        }
     }
     &__fill {
         display: flex;
@@ -95,10 +118,20 @@
     }
     &__date {
         color: $silver;
+        @include desktop {
+            padding-right: 1rem;
+        }
     }
     &__para {
         line-height: 1.125rem;
         font-size: .8125rem;
+        @include desktop {
+            width: 95%;
+        }
+    }
+    &__counter {
+        font-weight: 700;
+        padding-left: 1rem;
     }
 
 }

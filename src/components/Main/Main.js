@@ -11,15 +11,22 @@ import { useState } from 'react';
 function Main() {
 
     const [videoInfo, setVideoInfo] = useState(VideoDescription[0]) 
+    const [videos, setVideos] = useState(VideoDescription)
 
-    const compVids = smallJson.filter((smallJson) => smallJson.id !== videoInfo.id);
+    const compVids = videos.filter(video => video.id !== videoInfo.id);
+
+    const handleVideoSelect = (video) => {setVideoInfo(video)};
 
     return (
     <main>
         <Video videoInfo={videoInfo.image} />
-        <VideoDetails videoInfo={videoInfo} />
-        <Comments videoInfo={videoInfo}/>
-        <Videos compVids={compVids}/>
+        <section className='main'>
+            <section className='main__box'>
+                <VideoDetails videoInfo={videoInfo} /> 
+                <Comments videoInfo={videoInfo}/>
+            </section>    
+        <Videos videos={compVids} onVideoselect={handleVideoSelect}/>
+        </section>
     </main>
 )};
 

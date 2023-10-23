@@ -11,7 +11,7 @@ function Header() {
                 <div className='navi__box'>
                 <img className='navi__icon' alt='search icon' src={search}/>
                 <form className='navi__form'>
-                    <input className='navi__input' >
+                    <input placeholder='Search' className='navi__input' >
                     </input>
                 </form>
                 <img className='navi__user' alt='user profile' src={avatar}/>
