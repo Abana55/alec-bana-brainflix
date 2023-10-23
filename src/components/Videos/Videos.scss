@@ -5,9 +5,18 @@
     color: $silver;
     font-size: .9rem;
     padding: 1rem;
+    padding-top: 1rem;
+    &__container {
+        @include tablet {
+        margin: 0 2rem;
+        padding: 0;
+        }
+    }
     &__box {
         display: flex;
         margin: 1rem;
+        width: 100vw;
+
     }
     &__img {
         border-radius: .25rem;
@@ -18,10 +27,18 @@
     &__container {
         padding-left: 1rem;
         width: 55%;
+        @include tablet {
+            width: 31%;
+            padding-left: 0;
+
+        }
     }
     &__title {
         font-weight: 700;
         color: $brainflix-black;
         text-overflow: ellipsis;
+        @include tablet {
+            margin-bottom: 1rem;
+        }
     }
 }

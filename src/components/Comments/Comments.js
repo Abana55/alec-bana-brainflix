@@ -7,15 +7,17 @@ function Comments({ videoInfo }) {
       <section className="comment__form">
         <img className="comment__user" alt="user profile" src={avatar} />
         <form className="comment__box">
-          <label>JOIN THE CONVERSATION</label>
+          <section className="comment__conversation">
+          <label className="comment__label">JOIN THE CONVERSATION</label>
           <input
             className="comment__input"
             placeholder="Add a new Comment"
           ></input>
+          </section>
           <button className="comment__button">COMMENT</button>
         </form>
       </section>
-      <section>
+      <section className="comment__loop">
         {videoInfo.comments.map((comments) => (
           <section className="comment__section">
             <div className="comment__avatar"></div>

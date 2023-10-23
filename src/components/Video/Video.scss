@@ -2,7 +2,15 @@
 @use '../../styles/partials/variables' as *;
 
 .hero {
-    &__video {
-        height: 20vh;
+    background-color: $brainflix-darkblack !important;
+    @include tablet {
+        padding-inline: 4vw;
+    }        
+    @include desktop {
+        padding-inline: 17vw;
     }
+    &__video {
+        width: 100%;
+
+}
 }

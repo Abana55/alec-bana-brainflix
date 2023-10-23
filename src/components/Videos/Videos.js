@@ -3,7 +3,7 @@ import './Videos.scss';
 function Videos({compVids}) {
 
     return (
-        <>
+        <section className='videos__container'>
         <h2 className='videos'>NEXT VIDEOS</h2>
         {compVids.map((tehe) =>
         <section className='videos__box'>
@@ -15,7 +15,7 @@ function Videos({compVids}) {
         </section>
 
         )}
-        </>
+        </section>
     )
 }
 
