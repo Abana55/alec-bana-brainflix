@@ -28,7 +28,6 @@ function VideoDetails({videoInfo}){
                 <p className='info__description'>{videoInfo.description}</p>
             </section>
         </section>
-
     )
 }
 

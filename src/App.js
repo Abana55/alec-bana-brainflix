@@ -1,6 +1,8 @@
 import HomePage from './pages/Page/HomePage/HomePage';
 import UploadPage from './pages/Page/UploadPage/UploadPage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import './App.scss';
 
 
@@ -10,9 +12,9 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/video/:idFromParams" element={<HomePage/>} />
-        <Route path="Upload" element={<UploadPage/>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/videos/:id" element={<HomePage />} />
+        <Route path="upload" element={<UploadPage/>} />
       </Routes>
     </BrowserRouter>
     </>

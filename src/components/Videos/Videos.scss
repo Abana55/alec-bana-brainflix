@@ -14,19 +14,19 @@
             border-left: 1px solid $mercury;
         }
     }
+    &__link {
+        display: flex;
+        margin: 1rem;
+        width: 100vw;
+        text-decoration: none;
+        @include desktop {
+            width: 100%;
+        }
+    }
     &__container-1 {
         @include tablet {
         margin: 0 2rem;
         padding: 0;
-        }
-
-    }
-    &__box {
-        display: flex;
-        margin: 1rem;
-        width: 100vw;
-        @include desktop {
-            width: 100%;
         }
 
     }
