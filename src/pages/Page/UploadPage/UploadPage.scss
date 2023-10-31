@@ -1,0 +1,14 @@
+@use '../../../styles/partials/mixins' as *;
+@use '../../../styles/partials/variables' as *;
+
+.upload {
+    &__title {
+        color: $brainflix-black;
+
+    }
+    &__sub-title {
+        color: $silver;
+        font-size: .9rem;
+        padding-top: 1rem;
+    }
+}
