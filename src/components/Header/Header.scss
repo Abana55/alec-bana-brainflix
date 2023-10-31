@@ -5,6 +5,7 @@
 .navi {
     flex-direction: column;
     display: flex;
+    border-bottom: 1px solid $mercury;
     @include tablet {
         flex-direction: row;
         align-items: center;
@@ -48,10 +49,11 @@
         align-items: center;
     }
     &__input {
-        padding: 1rem;
+        padding: .75rem;
         border:1px solid $mercury;
         border-radius: .25rem;
         background-color: $alabaster;
+        width: 49vw;
         @include tablet {
             width: 25vw;
         }
@@ -77,6 +79,7 @@
         font-size: 1rem;
         font-weight: 600;
         margin-top: 1rem;
+        width: 90vw;
         @include tablet {
             margin-top: 0;
             width: 25vw;

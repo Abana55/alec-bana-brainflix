@@ -13,24 +13,25 @@ function UploadPage() {
     return(
         <>
         <Header/>
-        <form onSubmit={submit}>
             <section className='upload' >
-                <h1 className='upload'>Upload Video</h1>
-                <h2 className='upload'>video thumbnail</h2>
-                <img className='upload' src={UploadImg}/>
-                <form className='upload'>
-                <label className='upload'>TITLE YOUR VIDEO
-                    <input className='upload' placeholder='Add a title to your video' type="text" />
+                <h1 className='upload__title'>Upload Video</h1>
+                <h2 className='upload__sub-title-1'>video thumbnail</h2>
+                <img className='upload__img' src={UploadImg}/>
+                <form onSubmit={submit} className='upload__form'>
+                <div className='upload__box'>
+                    <label className='upload__sub-title'>TITLE YOUR VIDEO
+                        <input className='upload__input' placeholder='Add a title to your video' type="text" />
+                    </label>
+                 <label className='upload__sub-title'>ADD A VIDEO DESCRIPTION
+                    <input className='upload__input-1' placeholder='Add a description to your video' type="text" />
                  </label>
-                 <label className='upload'>ADD A VIDEO DESCRIPTION
-                    <input className='upload' placeholder='Add a description to your video' type="text" />
-                 </label>
-                     <button className='upload'>PUBLISH</button>
-                     <button className='upload'>CANCEL</button>
+                 </div>
+                 <div className='upload__border-sty'>
+                     <button className='upload__button'>PUBLISH</button>
+                     <button className='upload__button-1'>CANCEL</button>
+                 </div>    
                 </form>
-
             </section>
-            </form>
         </>
     )
 }
