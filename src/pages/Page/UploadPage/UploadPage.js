@@ -15,9 +15,12 @@ function UploadPage() {
         <Header/>
             <section className='upload' >
                 <h1 className='upload__title'>Upload Video</h1>
-                <h2 className='upload__sub-title-1'>video thumbnail</h2>
-                <img className='upload__img' src={UploadImg}/>
+                <h2 className='upload__sub-title-1'>VIDEO THUMBNAIL</h2>    
+                
+                
                 <form onSubmit={submit} className='upload__form'>
+                    <div className='upload__desktop'>
+                    <img className='upload__img' src={UploadImg}/>
                 <div className='upload__box'>
                     <label className='upload__sub-title'>TITLE YOUR VIDEO
                         <input className='upload__input' placeholder='Add a title to your video' type="text" />
@@ -25,6 +28,7 @@ function UploadPage() {
                  <label className='upload__sub-title'>ADD A VIDEO DESCRIPTION
                     <input className='upload__input-1' placeholder='Add a description to your video' type="text" />
                  </label>
+                 </div>
                  </div>
                  <div className='upload__border-sty'>
                      <button className='upload__button'>PUBLISH</button>

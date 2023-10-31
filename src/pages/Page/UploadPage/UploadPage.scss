@@ -2,6 +2,10 @@
 @use '../../../styles/partials/variables' as *;
 
 .upload {
+    @include desktop {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
     &__title {
         color: $brainflix-black;
 
@@ -9,6 +13,12 @@
     &__form {
         display: flex;
         flex-direction: column;
+    }
+    &__desktop {
+        @include desktop {
+            display: flex;
+            padding-bottom: 1rem;
+        }
     }
     &__box {
         display: flex;
@@ -22,6 +32,7 @@
         @include tablet {
             font-size: 2.5rem;
         }
+
     }
     &__img {
         background-position: center;
@@ -30,6 +41,9 @@
         border-radius: .25rem;
         @include tablet {
             width: 50vw;
+        }
+        @include desktop {
+            width: 30vw;
         }
     }
     &__sub-title-1 {
@@ -43,7 +57,7 @@
         @include tablet {
             border-top: 1px solid $mercury;
             font-size: 1rem;
-            font-weight: 400;
+            font-weight: 600;
         }
     }
     &__sub-title {
@@ -54,9 +68,7 @@
         flex-direction: column;
         margin-left: 1rem;
         font-size: 1rem;
-        // @include tablet {
-            
-        // }
+ 
     }
     &__input {
         padding: .5rem;
@@ -75,7 +87,7 @@
             width: 90vw;
         }
         @include desktop {
-            width: 30vw;
+            width: 41vw;
             margin-right: 1rem;
 
         }
@@ -101,7 +113,7 @@
             
         }
         @include desktop {
-            width: 30vw;
+            width: 42vw;
             margin-right: 1rem;
 
         }
@@ -122,6 +134,10 @@
             height: 5vh;
             width: 24vw;
         }
+        @include desktop {
+            width: 13vw;
+        }
+
     }
     &__button-1 {
         @include button;
@@ -131,5 +147,9 @@
             height: 5vh;
             width: 24vw;
         }
+        @include desktop {
+            width: 13vw;
+        }
+
     }
 }
